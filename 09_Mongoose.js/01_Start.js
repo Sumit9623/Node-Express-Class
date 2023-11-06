@@ -13,8 +13,6 @@ const path = require('path')
 const server = express();
 
 main().catch((err) => console.log(err));
-// mongodb://localhost:27017/test
-// mongodb+srv://Sumit:Sumit%409623@cluster0.jn9nlfm.mongodb.net/ecommerce
 async function main() {
   await mongoose.connect(process.env.MONGO_URL);
   console.log("DataBase Connected");
